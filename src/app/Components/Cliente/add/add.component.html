@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Crear cliente</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">Nombre:</label>
+          <input  [(ngModel)]="cliente.descripcion"  name="descripcion" type="text" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="">Cedula o Nit :</label>
+          <input [(ngModel)]="cliente.nit"  name="nit" type="text" class="form-control" />
+        </div>
+        <br />
+        <button (click)="guardar()" class="btn btn-primarydanger">save</button>
+      </form>
+    </div>
+  </div>
+</div>

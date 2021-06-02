@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'barranco';
+
+  constructor( private router: Router){
+
+  }
+
+  listarCliente(){
+    this.router.navigate(["listarCliente"])
+  }
+
+  NuevoCliente(){
+    this.router.navigate(['addCliente'])
+  }
 }
