@@ -23,6 +23,7 @@ export class ClienteService {
   getClienteId(id:number){
     return this.http.get<Cliente>(this.Url+"/"+id);
   }
+
   updateCliente(cliente:Cliente){
     return this.http.put<Cliente>(this.Url+"/"+cliente.id,cliente);
   }

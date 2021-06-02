@@ -8,12 +8,14 @@ import {  AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarComponent } from './Components/Cliente/listar/listar.component';
 import { AddComponent } from './Components/Cliente/add/add.component';
+import { EditComponent } from './Components/Cliente/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarComponent,
-    AddComponent
+    AddComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
